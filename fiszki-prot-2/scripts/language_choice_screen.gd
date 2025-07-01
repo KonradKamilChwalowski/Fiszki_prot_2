@@ -7,5 +7,4 @@ func _on_return_button_pressed() -> void:
 
 
 func _on_next_button_pressed() -> void:
-	#game_manager.change_screen("session_settings_screen")
-	pass # Replace with function body.
+	game_manager.change_screen("session_settings_screen")

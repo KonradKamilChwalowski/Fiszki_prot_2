@@ -1,11 +1,11 @@
 extends MenuButton
 
+@onready var game_manager = get_node("/root/GameManager")
 @onready var words_library_path := "res://assets/words_library.json"
 @onready var language_one_menu_button := $"../LanguageOneMenuButton"
 @onready var language_two_menu_button := $"../LanguageTwoMenuButton"
 
 var categories_tab: Array = []
-var category_to_learn: String
 var all_languages := ["polish", "english", "ukrainian", "german"]
 var special_categories := {
 	"alfabet ukraiński": ["polish", "ukrainian"],
@@ -52,9 +52,9 @@ func create_menu_options(categories: Array) -> void:
 
 # 🔵 Funkcja 4. Obsługa wyboru kategorii
 func _on_category_selected(id: int) -> void:
-	category_to_learn = categories_tab[id]
-	text = category_to_learn.capitalize()
-	var available_languages = check_category_languages(category_to_learn)
+	game_manager.category_to_learn = categories_tab[id]
+	text = game_manager.category_to_learn.capitalize()
+	var available_languages = check_category_languages(game_manager.category_to_learn)
 	language_one_menu_button.generate_languages_menu(available_languages)
 	language_one_menu_button.disabled = false
 	language_one_menu_button.text = "kategoria pierwsza"

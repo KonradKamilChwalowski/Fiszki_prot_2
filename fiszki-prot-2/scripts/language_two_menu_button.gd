@@ -1,5 +1,7 @@
 extends MenuButton
 
+@onready var game_manager = get_node("/root/GameManager")
+
 func generate_languages_menu(languages: Array) -> void:
 	var popup = get_popup()
 	popup.clear()
@@ -13,4 +15,5 @@ func generate_languages_menu(languages: Array) -> void:
 func _on_language_selected(id: int) -> void:
 	var lang = get_popup().get_item_text(id)
 	text = lang.capitalize()
-	print("Wybrano język:", lang)
+	game_manager.language_two = lang
+	print("Wybrano język: ", lang)
