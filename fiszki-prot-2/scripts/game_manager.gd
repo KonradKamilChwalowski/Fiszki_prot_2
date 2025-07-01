@@ -14,6 +14,10 @@ var category_to_learn: String
 var language_one: String
 var language_two: String
 
+var number_of_cards = 10
+var sorting_type: String = "Alfabetycznie"
+var difficulty: String = "Wszystkie"
+
 func _ready() -> void:
 	actual_screen = menu_screen.instantiate()
 	add_child(actual_screen)

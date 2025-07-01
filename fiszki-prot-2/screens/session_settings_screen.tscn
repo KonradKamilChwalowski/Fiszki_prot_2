@@ -42,32 +42,32 @@ text = "Liczba słówek: "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CategoryMenuButton" type="MenuButton" parent="."]
+[node name="NumberButton" parent="." instance=ExtResource("2_mjri0")]
 offset_left = 40.0
 offset_top = 250.0
 offset_right = 320.0
 offset_bottom = 310.0
-text = "Kategorie"
-flat = false
 
-[node name="LanguageOneMenuButton" type="MenuButton" parent="."]
+[node name="RichTextLabel" parent="NumberButton" index="1"]
+text = "Liczba fiszek: 10"
+
+[node name="SortingButton" parent="." instance=ExtResource("2_mjri0")]
 offset_left = 40.0
 offset_top = 320.0
 offset_right = 320.0
 offset_bottom = 380.0
-disabled = true
-text = "Język pierwszy"
-flat = false
-autowrap_mode = 3
 
-[node name="LanguageTwoMenuButton" type="MenuButton" parent="."]
+[node name="RichTextLabel" parent="SortingButton" index="1"]
+text = "Losowanie: Alfabetycznie"
+
+[node name="DifficultyButton" parent="." instance=ExtResource("2_mjri0")]
 offset_left = 40.0
 offset_top = 390.0
 offset_right = 320.0
 offset_bottom = 450.0
-disabled = true
-text = "Język drugi"
-flat = false
+
+[node name="RichTextLabel" parent="DifficultyButton" index="1"]
+text = "Trudność fiszek: Wszystkie"
 
 [node name="ReturnButton" parent="." instance=ExtResource("2_mjri0")]
 offset_left = 40.0
@@ -87,8 +87,14 @@ offset_bottom = 580.0
 [node name="RichTextLabel" parent="NextButton" index="1"]
 text = "Dalej"
 
+[connection signal="pressed" from="NumberButton" to="." method="_on_number_button_pressed"]
+[connection signal="pressed" from="SortingButton" to="." method="_on_sorting_button_pressed"]
+[connection signal="pressed" from="DifficultyButton" to="." method="_on_difficulty_button_pressed"]
 [connection signal="pressed" from="ReturnButton" to="." method="_on_return_button_pressed"]
 [connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
 
+[editable path="NumberButton"]
+[editable path="SortingButton"]
+[editable path="DifficultyButton"]
 [editable path="ReturnButton"]
 [editable path="NextButton"]
