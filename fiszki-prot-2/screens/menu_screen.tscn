@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://copkxn0y1rctd"]
+
+[ext_resource type="Script" uid="uid://d0o5v8d1at4aw" path="res://scripts/menu_screen.gd" id="1_3kcfb"]
+[ext_resource type="PackedScene" uid="uid://tmvhsvwnvkx6" path="res://scenes/button.tscn" id="1_ep2em"]
+
+[node name="MenuScreen" type="Node2D"]
+script = ExtResource("1_3kcfb")
+
+[node name="Screen Name" type="RichTextLabel" parent="."]
+offset_top = 40.0
+offset_right = 360.0
+offset_bottom = 80.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" parent="." instance=ExtResource("1_ep2em")]
+z_index = 1
+offset_left = 105.0
+offset_top = 340.0
+offset_right = 255.0
+offset_bottom = 400.0
+
+[node name="RichTextLabel" parent="StartButton" index="1"]
+text = "Zacznij sesję"
+
+[node name="LibraryButton" parent="." instance=ExtResource("1_ep2em")]
+z_index = 1
+offset_left = 105.0
+offset_top = 400.0
+offset_right = 255.0
+offset_bottom = 460.0
+
+[node name="RichTextLabel" parent="LibraryButton" index="1"]
+text = "Biblioteka"
+
+[node name="OptionsButton" parent="." instance=ExtResource("1_ep2em")]
+z_index = 1
+offset_left = 105.0
+offset_top = 460.0
+offset_right = 255.0
+offset_bottom = 520.0
+
+[node name="RichTextLabel" parent="OptionsButton" index="1"]
+text = "Opcję"
+
+[node name="ExitButton" parent="." instance=ExtResource("1_ep2em")]
+z_index = 1
+offset_left = 105.0
+offset_top = 520.0
+offset_right = 255.0
+offset_bottom = 580.0
+
+[node name="RichTextLabel" parent="ExitButton" index="1"]
+text = "Wyjście"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="LibraryButton" to="." method="_on_library_button_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
+
+[editable path="StartButton"]
+[editable path="LibraryButton"]
+[editable path="OptionsButton"]
+[editable path="ExitButton"]

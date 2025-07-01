@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://tmvhsvwnvkx6"]
+
+[node name="Button" type="Button"]
+offset_right = 100.0
+offset_bottom = 40.0
+flat = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+text = "Button
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,36 @@
+[
+  {
+	"id": 1,
+	"category": "owoce i warzywa",
+	"polish": "jabłko",
+	"english": "apple",
+	"ukrainian": "яблуко",
+	"german": "Apfel",
+	"difficulty": 3
+  },
+  {
+	"id": 2,
+	"category": "owoce i warzywa",
+	"polish": "banan",
+	"english": "banana",
+	"ukrainian": "банан",
+	"german": "Banane",
+	"difficulty": 3
+  },
+  {
+	"id": 3,
+	"category": "owoce i warzywa",
+	"polish": "ziemniak",
+	"english": "potato",
+	"ukrainian": "картопля",
+	"german": "Kartoffel",
+	"difficulty": 3
+  },
+  {
+	"id": 4,
+	"category": "alfabet ukraiński",
+	"polish": "a",
+	"ukrainian": "a",
+	"difficulty": 3
+  }
+]

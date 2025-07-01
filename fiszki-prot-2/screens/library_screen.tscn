@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgo0n0phtdbbs"]
+
+[ext_resource type="Script" uid="uid://csrv3mfmo0xcs" path="res://scripts/library_screen.gd" id="1_xhdws"]
+[ext_resource type="PackedScene" uid="uid://tmvhsvwnvkx6" path="res://scenes/button.tscn" id="2_vmqsj"]
+
+[node name="LibraryScreen" type="Node2D"]
+script = ExtResource("1_xhdws")
+
+[node name="Screen Name" type="RichTextLabel" parent="."]
+offset_top = 40.0
+offset_right = 360.0
+offset_bottom = 80.0
+theme_override_font_sizes/normal_font_size = 20
+text = "NIE DZIAŁA, W BUDOWIE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReturnButton" parent="." instance=ExtResource("2_vmqsj")]
+offset_left = 105.0
+offset_top = 100.0
+offset_right = 255.0
+offset_bottom = 160.0
+
+[node name="RichTextLabel" parent="ReturnButton" index="1"]
+text = "Powrót"
+
+[connection signal="pressed" from="ReturnButton" to="." method="_on_return_button_pressed"]
+
+[editable path="ReturnButton"]
