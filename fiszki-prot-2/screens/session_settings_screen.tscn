@@ -44,27 +44,27 @@ vertical_alignment = 1
 
 [node name="NumberButton" parent="." instance=ExtResource("2_mjri0")]
 offset_left = 40.0
-offset_top = 250.0
+offset_top = 240.0
 offset_right = 320.0
-offset_bottom = 310.0
+offset_bottom = 300.0
 
 [node name="RichTextLabel" parent="NumberButton" index="1"]
-text = "Liczba fiszek: 10"
+text = "Liczba fiszek: Wszystkie"
 
 [node name="SortingButton" parent="." instance=ExtResource("2_mjri0")]
 offset_left = 40.0
-offset_top = 320.0
+offset_top = 310.0
 offset_right = 320.0
-offset_bottom = 380.0
+offset_bottom = 370.0
 
 [node name="RichTextLabel" parent="SortingButton" index="1"]
-text = "Losowanie: Alfabetycznie"
+text = "Wyświetlanie: Alfabetycznie"
 
 [node name="DifficultyButton" parent="." instance=ExtResource("2_mjri0")]
 offset_left = 40.0
-offset_top = 390.0
+offset_top = 380.0
 offset_right = 320.0
-offset_bottom = 450.0
+offset_bottom = 440.0
 
 [node name="RichTextLabel" parent="DifficultyButton" index="1"]
 text = "Trudność fiszek: Wszystkie"
@@ -85,7 +85,7 @@ offset_right = 320.0
 offset_bottom = 580.0
 
 [node name="RichTextLabel" parent="NextButton" index="1"]
-text = "Dalej"
+text = "Start sesji"
 
 [connection signal="pressed" from="NumberButton" to="." method="_on_number_button_pressed"]
 [connection signal="pressed" from="SortingButton" to="." method="_on_sorting_button_pressed"]

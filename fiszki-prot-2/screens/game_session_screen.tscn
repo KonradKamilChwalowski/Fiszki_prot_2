@@ -1,0 +1,110 @@
+[gd_scene load_steps=3 format=3 uid="uid://8tapdpsnf1bv"]
+
+[ext_resource type="PackedScene" uid="uid://tmvhsvwnvkx6" path="res://scenes/button.tscn" id="1_bcwfw"]
+[ext_resource type="Script" uid="uid://heybwk55cx5x" path="res://scripts/game_session_screen.gd" id="1_mv4uf"]
+
+[node name="GameSessionScreen" type="Node2D"]
+script = ExtResource("1_mv4uf")
+
+[node name="ScreenName" type="RichTextLabel" parent="."]
+offset_top = 40.0
+offset_right = 360.0
+offset_bottom = 80.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Sesja nauki"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CategoryLabel" type="RichTextLabel" parent="."]
+offset_top = 80.0
+offset_right = 360.0
+offset_bottom = 120.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Kategoria: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LanguagesLabel" type="RichTextLabel" parent="."]
+offset_top = 120.0
+offset_right = 360.0
+offset_bottom = 160.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Języki: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WordsNumberLabel" type="RichTextLabel" parent="."]
+offset_top = 160.0
+offset_right = 360.0
+offset_bottom = 200.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Liczba słówek: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DifficultyLabel" type="RichTextLabel" parent="."]
+offset_top = 200.0
+offset_right = 360.0
+offset_bottom = 240.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Losowanie: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FlashCardButton" parent="." instance=ExtResource("1_bcwfw")]
+offset_left = 40.0
+offset_top = 240.0
+offset_right = 320.0
+offset_bottom = 370.0
+pivot_offset = Vector2(140, 65)
+
+[node name="RichTextLabel" parent="FlashCardButton" index="1"]
+text = "Fiszka"
+
+[node name="HintButton" parent="." instance=ExtResource("1_bcwfw")]
+offset_left = 40.0
+offset_top = 380.0
+offset_right = 320.0
+offset_bottom = 440.0
+
+[node name="RichTextLabel" parent="HintButton" index="1"]
+text = "Podpowiedź: "
+
+[node name="DifficultyButton" parent="." instance=ExtResource("1_bcwfw")]
+offset_left = 40.0
+offset_top = 450.0
+offset_right = 320.0
+offset_bottom = 510.0
+
+[node name="RichTextLabel" parent="DifficultyButton" index="1"]
+text = "Trudność słówka"
+
+[node name="RepeatButton" parent="." instance=ExtResource("1_bcwfw")]
+offset_left = 40.0
+offset_top = 520.0
+offset_right = 180.0
+offset_bottom = 580.0
+
+[node name="RichTextLabel" parent="RepeatButton" index="1"]
+text = "Do powtórki"
+
+[node name="ThrowOutButton" parent="." instance=ExtResource("1_bcwfw")]
+offset_left = 180.0
+offset_top = 520.0
+offset_right = 320.0
+offset_bottom = 580.0
+
+[node name="RichTextLabel" parent="ThrowOutButton" index="1"]
+text = "Już umiem!"
+
+[connection signal="pressed" from="FlashCardButton" to="." method="_on_flash_card_button_pressed"]
+[connection signal="pressed" from="HintButton" to="." method="_on_hint_button_pressed"]
+[connection signal="pressed" from="DifficultyButton" to="." method="_on_difficulty_button_pressed"]
+[connection signal="pressed" from="RepeatButton" to="." method="_on_repeat_button_pressed"]
+[connection signal="pressed" from="ThrowOutButton" to="." method="_on_throw_out_button_pressed"]
+
+[editable path="FlashCardButton"]
+[editable path="HintButton"]
+[editable path="DifficultyButton"]
+[editable path="RepeatButton"]
+[editable path="ThrowOutButton"]

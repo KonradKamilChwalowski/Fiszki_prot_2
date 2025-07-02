@@ -6,7 +6,7 @@ extends MenuButton
 @onready var language_two_menu_button := $"../LanguageTwoMenuButton"
 
 var categories_tab: Array = []
-var all_languages := ["polish", "english", "ukrainian", "german"]
+var all_languages := ["polish", "english", "ukrainian", "german", "spanish"]
 var special_categories := {
 	"alfabet ukraiński": ["polish", "ukrainian"],
 }
@@ -18,14 +18,13 @@ func _ready() -> void:
 
 # this funcion lists categories from JSON
 func list_categories() -> Array:
+	# JSON
 	var file = FileAccess.open(words_library_path, FileAccess.READ)
 	if not file:
 		print("Nie można otworzyć pliku: ", words_library_path)
 		return []
-
 	var content = file.get_as_text()
 	file.close()
-	
 	var data = JSON.parse_string(content)
 	if typeof(data) != TYPE_ARRAY:
 		print("Nieprawidłowy format JSON.")
@@ -57,10 +56,10 @@ func _on_category_selected(id: int) -> void:
 	var available_languages = check_category_languages(game_manager.category_to_learn)
 	language_one_menu_button.generate_languages_menu(available_languages)
 	language_one_menu_button.disabled = false
-	language_one_menu_button.text = "kategoria pierwsza"
+	language_one_menu_button.text = "Język pierwszy"
 	language_two_menu_button.generate_languages_menu(available_languages)
 	language_two_menu_button.disabled = false
-	language_two_menu_button.text = "kategoria druga"
+	language_two_menu_button.text = "Język drugi"
 
 # 🔵 Funkcja 5. Sprawdza dostępne języki w kategorii
 func check_category_languages(category: String) -> Array:
