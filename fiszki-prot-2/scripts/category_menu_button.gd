@@ -4,12 +4,10 @@ extends MenuButton
 @onready var words_library_path := "res://assets/words_library.json"
 @onready var language_one_menu_button := $"../LanguageOneMenuButton"
 @onready var language_two_menu_button := $"../LanguageTwoMenuButton"
+@onready var all_languages: Array = game_manager.all_languages
+@onready var special_categories: Dictionary = game_manager.special_categories
 
 var categories_tab: Array = []
-var all_languages := ["polish", "english", "ukrainian", "german", "spanish"]
-var special_categories := {
-	"alfabet ukraiński": ["polish", "ukrainian"],
-}
 
 func _ready() -> void:
 	var categories = list_categories()

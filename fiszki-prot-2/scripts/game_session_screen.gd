@@ -8,18 +8,23 @@ extends Node2D
 @onready var difficulty_label := $DifficultyLabel
 @onready var flashcard_button: Button = $FlashCardButton
 @onready var flashcard_label := $FlashCardButton/RichTextLabel
+@onready var hint_label := $HintButton/RichTextLabel
 
+# Variables for rotating the fishcard
 var is_rotating = false
 var rotation_time: float = 0.1
 var rotation_elapsed: float = 0.0
 var count_language_switch: int = 0
 var can_switch_language: bool = false
 
+# Variables for fishcards
+var actual_fishcard_index: int = 0
+var count_hints = 0
+
 func _ready() -> void:
 	print(game_manager.category_to_learn)
 	set_labels()
-	if game_manager.sorting_type == "Losowo":
-		shuffle_array_of_words()
+	game_manager.shuffle_array_of_words()
 
 func set_labels() -> void:
 	category_label.text += game_manager.category_to_learn
@@ -51,28 +56,25 @@ func _process(delta: float) -> void:
 	# FLASHCARD TEXT
 	if game_manager.array_of_words.size() > 0:
 		if bool(count_language_switch % 2):
-			flashcard_label.text = game_manager.array_of_words[0][1]
+			flashcard_label.text = game_manager.array_of_words[actual_fishcard_index][1]
 		else:
-			flashcard_label.text = game_manager.array_of_words[0][0]
+			flashcard_label.text = game_manager.array_of_words[actual_fishcard_index][0]
 	else:
 		flashcard_label.text = "Brak fiszek"
 
 func _on_flash_card_button_pressed() -> void:
+	# The flashcard is rotating in _process, so here we just start proces
 	if not is_rotating:
 		is_rotating = true
 		can_switch_language = true
 		rotation_elapsed = 0.0
 		flashcard_button.disabled = true
 
-func shuffle_array_of_words() -> void:
-	for word_index in range(game_manager.array_of_words.size()):
-		var rand_index = randi() % game_manager.array_of_words.size()
-		var temp = game_manager.array_of_words[word_index]
-		game_manager.array_of_words[word_index] = game_manager.array_of_words[rand_index]
-		game_manager.array_of_words[rand_index] = temp
 
 func _on_hint_button_pressed() -> void:
-	pass # Replace with function body.
+	if count_hints < game_manager.array_of_words[actual_fishcard_index][1].length():
+		hint_label.text += game_manager.array_of_words[actual_fishcard_index][1][count_hints]
+		count_hints += 1
 
 
 func _on_difficulty_button_pressed() -> void:
@@ -80,8 +82,23 @@ func _on_difficulty_button_pressed() -> void:
 
 
 func _on_repeat_button_pressed() -> void:
-	pass # Replace with function body.
-
+	if actual_fishcard_index == game_manager.array_of_words.size() - 1:
+		actual_fishcard_index = 0
+	else:
+		actual_fishcard_index += 1
+	count_language_switch = 0
+	count_hints = 0
+	hint_label.text = "Podpowiedź: "
 
 func _on_throw_out_button_pressed() -> void:
-	pass # Replace with function body.
+	# Remove the flashcard
+	game_manager.array_of_words.remove_at(actual_fishcard_index)
+	words_number_label.text = "Liczba fiszek: "
+	game_manager.number_of_cards -= 1
+	words_number_label.text += str(game_manager.number_of_cards)
+	count_language_switch = 0
+	count_hints = 0
+	hint_label.text = "Podpowiedź: "
+	if game_manager.number_of_cards < 1:
+		print("KONIEC SESJI")
+		game_manager.change_screen("menu_screen")

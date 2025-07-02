@@ -9,6 +9,13 @@ var session_settings_screen := load("res://screens/session_settings_screen.tscn"
 var game_session_screen := load("res://screens/game_session_screen.tscn")
 var actual_screen: Node2D
 
+# LANGUAGE SETTINGS
+var all_languages:= ["polish", "english", "ukrainian", "german", "spanish"]
+var special_categories := {
+	"alfabet ukraiński": ["polish", "ukrainian"],
+	"wierszyk o Ali": ["polish", "ukrainian"]
+}
+
 # SESSION SETTINGS
 var category_to_learn: String
 var language_one: String
@@ -23,6 +30,20 @@ var array_of_words = []
 func _ready() -> void:
 	actual_screen = menu_screen.instantiate()
 	add_child(actual_screen)
+
+func shuffle_array_of_words() -> void:
+	if sorting_type == "Alfabetycznie":
+		array_of_words.sort_custom(func(a, b):
+			return a[0] < b[0])
+	if sorting_type == "Losowo":
+		for word_index in range(array_of_words.size()):
+			var rand_index = randi() % array_of_words.size()
+			var temp = array_of_words[word_index]
+			array_of_words[word_index] = array_of_words[rand_index]
+			array_of_words[rand_index] = temp
+	if sorting_type == "id":
+		array_of_words.sort_custom(func(a, b):
+			return a[2] < b[2])
 
 func change_screen(screen_name: String) -> void:
 	

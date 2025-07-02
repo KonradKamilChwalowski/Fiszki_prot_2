@@ -80,6 +80,10 @@ func _on_sorting_button_pressed() -> void:
 		sorting_label.text = "Wyświetlanie: Losowo"
 		did_it_change = true
 	if sorting_type == "Losowo" and did_it_change == false:
+		sorting_type = "id"
+		sorting_label.text = "Wyświetlanie: Po ID fiszki"
+		did_it_change = true
+	if sorting_type == "id" and did_it_change == false:
 		sorting_type = "Alfabetycznie"
 		sorting_label.text = "Wyświetlanie: Alfabetycznie"
 		did_it_change = true
@@ -147,7 +151,7 @@ func ready_session() -> void:
 			bool_difficulty = (entry.has("difficulty") and entry["difficulty"] == difficulty)
 		
 		if bool_lang_one and bool_lang_two and bool_difficulty and bool_category:
-			game_manager.array_of_words.append([entry[game_manager.language_one],entry[game_manager.language_two]])
+			game_manager.array_of_words.append([entry[game_manager.language_one],entry[game_manager.language_two], int(entry["id"])])
 	
 	# Cutting arrays to number_of_cards lenght
 	if number_of_cards >= game_manager.array_of_words.size():

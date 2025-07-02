@@ -729,5 +729,85 @@
 	"polish": "ja",
 	"ukrainian": "я/Я",
 	"difficulty": "Trudne"
+  },
+  {
+	"id": 84,
+	"category": "wierszyk o Ali",
+	"polish": "Ala ma kota",
+	"english": "Ala has a cat",
+	"ukrainian": "Аля має кота",
+	"german": "Ala hat eine Katze",
+	"spanish": "Ala tiene un gato",
+	"difficulty": "Trudne"
+  },
+  {
+	"id": 85,
+	"category": "wierszyk o Ali",
+	"polish": "Kot ma Alę",
+	"english": "The cat has Ala",
+	"ukrainian": "Кіт має Алю",
+	"german": "Die Katze hat Ala",
+	"spanish": "El gato tiene a Ala",
+	"difficulty": "Trudne"
+  },
+  {
+	"id": 86,
+	"category": "wierszyk o Ali",
+	"polish": "Ala i kot",
+	"english": "Ala and the cat",
+	"ukrainian": "Аля і кіт",
+	"german": "Ala und die Katze",
+	"spanish": "Ala y el gato",
+	"difficulty": "Trudne"
+  },
+  {
+	"id": 87,
+	"category": "wierszyk o Ali",
+	"polish": "razem mieszkają",
+	"english": "live together",
+	"ukrainian": "живуть разом",
+	"german": "wohnen zusammen",
+	"spanish": "viven juntos",
+	"difficulty": "Trudne"
+  },
+  {
+	"id": 88,
+	"category": "wierszyk o Ali",
+	"polish": "Kot się bawi",
+	"english": "The cat plays",
+	"ukrainian": "Кіт грається",
+	"german": "Die Katze spielt",
+	"spanish": "El gato juega",
+	"difficulty": "Trudne"
+  },
+  {
+	"id": 89,
+	"category": "wierszyk o Ali",
+	"polish": "Ala się cieszy",
+	"english": "Ala is happy",
+	"ukrainian": "Аля радіє",
+	"german": "Ala freut sich",
+	"spanish": "Ala está feliz",
+	"difficulty": "Trudne"
+  },
+  {
+	"id": 90,
+	"category": "wierszyk o Ali",
+	"polish": "Ala i kot",
+	"english": "Ala and the cat",
+	"ukrainian": "Аля і кіт",
+	"german": "Ala und die Katze",
+	"spanish": "Ala y el gato",
+	"difficulty": "Trudne"
+  },
+  {
+	"id": 91,
+	"category": "wierszyk o Ali",
+	"polish": "są bardzo szczęśliwi",
+	"english": "are very happy",
+	"ukrainian": "дуже щасливі",
+	"german": "sind sehr glücklich",
+	"spanish": "están muy felices",
+	"difficulty": "Trudne"
   }
 ]

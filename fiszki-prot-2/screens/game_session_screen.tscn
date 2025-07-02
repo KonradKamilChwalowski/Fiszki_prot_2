@@ -77,7 +77,7 @@ offset_right = 320.0
 offset_bottom = 510.0
 
 [node name="RichTextLabel" parent="DifficultyButton" index="1"]
-text = "Trudność słówka"
+text = "Trudność słówka: "
 
 [node name="RepeatButton" parent="." instance=ExtResource("1_bcwfw")]
 offset_left = 40.0
