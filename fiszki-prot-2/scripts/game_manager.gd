@@ -12,8 +12,7 @@ var actual_screen: Node2D
 # LANGUAGE SETTINGS
 var all_languages:= ["polish", "english", "ukrainian", "german", "spanish"]
 var special_categories := {
-	"alfabet ukraiński": ["polish", "ukrainian"],
-	"wierszyk o Ali": ["polish", "ukrainian"]
+	"alfabet ukraiński": ["polish", "ukrainian"]
 }
 
 # SESSION SETTINGS
@@ -24,8 +23,12 @@ var number_of_cards: int = 10
 var sorting_type: String = "Alfabetycznie"
 var difficulty: String = "Wszystkie"
 
-# ARRAY OF FLASHCARDS
-var array_of_words = []
+# VARIABLES
+var array_of_words: Array = []
+var color_easy: Color = Color(0.0, 0.6, 0.0, 0.6)
+var color_medium: Color = Color(0.6, 0.6, 0.0, 0.6)
+var color_hard: Color = Color(0.6, 0.0, 0.0, 0.6)
+var color_all: Color = Color(0.4, 0.4, 0.4, 0.6)
 
 func _ready() -> void:
 	actual_screen = menu_screen.instantiate()

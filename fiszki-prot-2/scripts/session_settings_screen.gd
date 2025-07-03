@@ -89,28 +89,23 @@ func _on_sorting_button_pressed() -> void:
 		did_it_change = true
 
 func _on_difficulty_button_pressed() -> void:
-	var did_it_change: bool = false
 	
-	if difficulty == "Łatwe" and did_it_change == false:
+	if difficulty == "Łatwe":
 		difficulty = "Średnie"
 		difficulty_label.text = "Trudność fiszek: Średnie"
-		difficulty_color.color = Color(0.5, 0.5, 0.0, 0.6)
-		did_it_change = true
-	if difficulty == "Średnie" and did_it_change == false:
+		difficulty_color.color = game_manager.color_medium
+	if difficulty == "Średnie":
 		difficulty = "Trudne"
 		difficulty_label.text = "Trudność fiszek: Trudne"
-		difficulty_color.color = Color(0.5, 0.0, 0.0, 0.6)
-		did_it_change = true
-	if difficulty == "Trudne" and did_it_change == false:
+		difficulty_color.color = game_manager.color_hard
+	if difficulty == "Trudne":
 		difficulty = "Wszystkie"
 		difficulty_label.text = "Trudność fiszek: Wszystkie"
-		difficulty_color.color = Color(0.30, 0.30, 0.30, 0.6)
-		did_it_change = true
-	if difficulty == "Wszystkie" and did_it_change == false:
+		difficulty_color.color = game_manager.color_all
+	if difficulty == "Wszystkie":
 		difficulty = "Łatwe"
 		difficulty_label.text = "Trudność fiszek: Łatwe"
-		difficulty_color.color = Color(0.0, 0.5, 0.0, 0.6)
-		did_it_change = true
+		difficulty_color.color = game_manager.color_easy
 
 func _on_return_button_pressed() -> void:
 	game_manager.change_screen("language_choice_screen")
@@ -151,7 +146,7 @@ func ready_session() -> void:
 			bool_difficulty = (entry.has("difficulty") and entry["difficulty"] == difficulty)
 		
 		if bool_lang_one and bool_lang_two and bool_difficulty and bool_category:
-			game_manager.array_of_words.append([entry[game_manager.language_one],entry[game_manager.language_two], int(entry["id"])])
+			game_manager.array_of_words.append([entry[game_manager.language_one],entry[game_manager.language_two], int(entry["id"]), entry["difficulty"]])
 	
 	# Cutting arrays to number_of_cards lenght
 	if number_of_cards >= game_manager.array_of_words.size():
@@ -161,3 +156,4 @@ func ready_session() -> void:
 		var index_to_remove = randi() % game_manager.array_of_words.size()
 		game_manager.array_of_words.remove_at(index_to_remove)
 	game_manager.number_of_cards = game_manager.array_of_words.size()
+	print(game_manager.array_of_words)

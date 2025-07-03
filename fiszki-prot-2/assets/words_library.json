@@ -1,813 +1,813 @@
 [
-  {
-	"id": 1,
-	"category": "owoce i warzywa",
-	"polish": "jabłko",
-	"english": "apple",
-	"ukrainian": "яблуко",
-	"german": "der Apfel",
-	"spanish": "la manzana",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 2,
-	"category": "owoce i warzywa",
-	"polish": "banan",
-	"english": "banana",
-	"ukrainian": "банан",
-	"german": "die Banane",
-	"spanish": "el plátano",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 3,
-	"category": "owoce i warzywa",
-	"polish": "pomarańcza",
-	"english": "orange",
-	"ukrainian": "апельсин",
-	"german": "die Orange",
-	"spanish": "la naranja",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 4,
-	"category": "owoce i warzywa",
-	"polish": "gruszka",
-	"english": "pear",
-	"ukrainian": "груша",
-	"german": "die Birne",
-	"spanish": "la pera",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 5,
-	"category": "owoce i warzywa",
-	"polish": "winogrono",
-	"english": "grape",
-	"ukrainian": "виноград",
-	"german": "die Traube",
-	"spanish": "la uva",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 6,
-	"category": "owoce i warzywa",
-	"polish": "truskawka",
-	"english": "strawberry",
-	"ukrainian": "полуниця",
-	"german": "die Erdbeere",
-	"spanish": "la fresa",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 7,
-	"category": "owoce i warzywa",
-	"polish": "malina",
-	"english": "raspberry",
-	"ukrainian": "малина",
-	"german": "die Himbeere",
-	"spanish": "la frambuesa",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 8,
-	"category": "owoce i warzywa",
-	"polish": "borówka",
-	"english": "blueberry",
-	"ukrainian": "чорниця",
-	"german": "die Heidelbeere",
-	"spanish": "el arándano",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 9,
-	"category": "owoce i warzywa",
-	"polish": "cytryna",
-	"english": "lemon",
-	"ukrainian": "лимон",
-	"german": "die Zitrone",
-	"spanish": "el limón",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 10,
-	"category": "owoce i warzywa",
-	"polish": "limonka",
-	"english": "lime",
-	"ukrainian": "лайм",
-	"german": "die Limette",
-	"spanish": "la lima",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 11,
-	"category": "owoce i warzywa",
-	"polish": "mandarynka",
-	"english": "mandarin",
-	"ukrainian": "мандрин",
-	"german": "die Mandarine",
-	"spanish": "la mandarina",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 12,
-	"category": "owoce i warzywa",
-	"polish": "arbuz",
-	"english": "watermelon",
-	"ukrainian": "кавун",
-	"german": "die Wassermelone",
-	"spanish": "la sandía",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 13,
-	"category": "owoce i warzywa",
-	"polish": "melon",
-	"english": "melon",
-	"ukrainian": "диня",
-	"german": "die Melone",
-	"spanish": "el melón",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 14,
-	"category": "owoce i warzywa",
-	"polish": "kiwi",
-	"english": "kiwi",
-	"ukrainian": "ківі",
-	"german": "die Kiwi",
-	"spanish": "el kiwi",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 15,
-	"category": "owoce i warzywa",
-	"polish": "ananas",
-	"english": "pineapple",
-	"ukrainian": "ананас",
-	"german": "die Ananas",
-	"spanish": "la piña",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 16,
-	"category": "owoce i warzywa",
-	"polish": "awokado",
-	"english": "avocado",
-	"ukrainian": "авокадо",
-	"german": "die Avocado",
-	"spanish": "el aguacate",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 17,
-	"category": "owoce i warzywa",
-	"polish": "brzoskwinia",
-	"english": "peach",
-	"ukrainian": "персик",
-	"german": "der Pfirsich",
-	"spanish": "el melocotón",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 18,
-	"category": "owoce i warzywa",
-	"polish": "morela",
-	"english": "apricot",
-	"ukrainian": "абрикос",
-	"german": "die Aprikose",
-	"spanish": "el albaricoque",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 19,
-	"category": "owoce i warzywa",
-	"polish": "śliwka",
-	"english": "plum",
-	"ukrainian": "слива",
-	"german": "die Pflaume",
-	"spanish": "la ciruela",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 20,
-	"category": "owoce i warzywa",
-	"polish": "czereśnia",
-	"english": "sweet cherry",
-	"ukrainian": "черешня",
-	"german": "die Süßkirsche",
-	"spanish": "la cereza",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 21,
-	"category": "owoce i warzywa",
-	"polish": "wiśnia",
-	"english": "sour cherry",
-	"ukrainian": "вишня",
-	"german": "die Sauerkirsche",
-	"spanish": "la guinda",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 22,
-	"category": "owoce i warzywa",
-	"polish": "porzeczka",
-	"english": "currant",
-	"ukrainian": "смородина",
-	"german": "die Johannisbeere",
-	"spanish": "la grosella",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 23,
-	"category": "owoce i warzywa",
-	"polish": "jeżyna",
-	"english": "blackberry",
-	"ukrainian": "ожина",
-	"german": "die Brombeere",
-	"spanish": "la mora",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 24,
-	"category": "owoce i warzywa",
-	"polish": "poziomka",
-	"english": "wild strawberry",
-	"ukrainian": "суниця",
-	"german": "die Walderdbeere",
-	"spanish": "la fresa silvestre",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 25,
-	"category": "owoce i warzywa",
-	"polish": "granat",
-	"english": "pomegranate",
-	"ukrainian": "гранат",
-	"german": "der Granatapfel",
-	"spanish": "la granada",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 26,
-	"category": "owoce i warzywa",
-	"polish": "ziemniak",
-	"english": "potato",
-	"ukrainian": "картопля",
-	"german": "die Kartoffel",
-	"spanish": "la patata",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 27,
-	"category": "owoce i warzywa",
-	"polish": "marchewka",
-	"english": "carrot",
-	"ukrainian": "морква",
-	"german": "die Karotte",
-	"spanish": "la zanahoria",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 28,
-	"category": "owoce i warzywa",
-	"polish": "ogórek",
-	"english": "cucumber",
-	"ukrainian": "огірок",
-	"german": "die Gurke",
-	"spanish": "el pepino",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 29,
-	"category": "owoce i warzywa",
-	"polish": "pomidor",
-	"english": "tomato",
-	"ukrainian": "помідор",
-	"german": "die Tomate",
-	"spanish": "el tomate",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 30,
-	"category": "owoce i warzywa",
-	"polish": "papryka",
-	"english": "pepper",
-	"ukrainian": "перець",
-	"german": "die Paprika",
-	"spanish": "el pimiento",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 31,
-	"category": "owoce i warzywa",
-	"polish": "cebula",
-	"english": "onion",
-	"ukrainian": "цибуля",
-	"german": "die Zwiebel",
-	"spanish": "la cebolla",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 32,
-	"category": "owoce i warzywa",
-	"polish": "czosnek",
-	"english": "garlic",
-	"ukrainian": "часник",
-	"german": "der Knoblauch",
-	"spanish": "el ajo",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 33,
-	"category": "owoce i warzywa",
-	"polish": "sałata",
-	"english": "lettuce",
-	"ukrainian": "салат",
-	"german": "der Kopfsalat",
-	"spanish": "la lechuga",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 34,
-	"category": "owoce i warzywa",
-	"polish": "kapusta",
-	"english": "cabbage",
-	"ukrainian": "капуста",
-	"german": "der Kohl",
-	"spanish": "la col",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 35,
-	"category": "owoce i warzywa",
-	"polish": "brokuł",
-	"english": "broccoli",
-	"ukrainian": "броколі",
-	"german": "der Brokkoli",
-	"spanish": "el brócoli",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 36,
-	"category": "owoce i warzywa",
-	"polish": "kalafior",
-	"english": "cauliflower",
-	"ukrainian": "цвітна капуста",
-	"german": "der Blumenkohl",
-	"spanish": "la coliflor",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 37,
-	"category": "owoce i warzywa",
-	"polish": "cukinia",
-	"english": "zucchini",
-	"ukrainian": "кабачок",
-	"german": "die Zucchini",
-	"spanish": "el calabacín",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 38,
-	"category": "owoce i warzywa",
-	"polish": "bakłażan",
-	"english": "eggplant",
-	"ukrainian": "баклажан",
-	"german": "die Aubergine",
-	"spanish": "la berenjena",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 39,
-	"category": "owoce i warzywa",
-	"polish": "szpinak",
-	"english": "spinach",
-	"ukrainian": "шпинат",
-	"german": "der Spinat",
-	"spanish": "la espinaca",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 40,
-	"category": "owoce i warzywa",
-	"polish": "rukola",
-	"english": "arugula",
-	"ukrainian": "рукола",
-	"german": "der Rucola",
-	"spanish": "la rúcula",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 41,
-	"category": "owoce i warzywa",
-	"polish": "jarmuż",
-	"english": "kale",
-	"ukrainian": "капуста кучерява",
-	"german": "der Grünkohl",
-	"spanish": "la col rizada",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 42,
-	"category": "owoce i warzywa",
-	"polish": "burak",
-	"english": "beetroot",
-	"ukrainian": "буряк",
-	"german": "die Rote Bete",
-	"spanish": "la remolacha",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 43,
-	"category": "owoce i warzywa",
-	"polish": "seler",
-	"english": "celery",
-	"ukrainian": "селера",
-	"german": "der Sellerie",
-	"spanish": "el apio",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 44,
-	"category": "owoce i warzywa",
-	"polish": "pietruszka",
-	"english": "parsley",
-	"ukrainian": "петрушка",
-	"german": "die Petersilie",
-	"spanish": "el perejil",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 45,
-	"category": "owoce i warzywa",
-	"polish": "koper",
-	"english": "dill",
-	"ukrainian": "кріп",
-	"german": "der Dill",
-	"spanish": "el eneldo",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 46,
-	"category": "owoce i warzywa",
-	"polish": "groszek",
-	"english": "peas",
-	"ukrainian": "горох",
-	"german": "die Erbse",
-	"spanish": "el guisante",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 47,
-	"category": "owoce i warzywa",
-	"polish": "fasola",
-	"english": "bean",
-	"ukrainian": "квасоля",
-	"german": "die Bohne",
-	"spanish": "la judía",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 48,
-	"category": "owoce i warzywa",
-	"polish": "dynia",
-	"english": "pumpkin",
-	"ukrainian": "гарбуз",
-	"german": "der Kürbis",
-	"spanish": "la calabaza",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 49,
-	"category": "owoce i warzywa",
-	"polish": "imbir",
-	"english": "ginger",
-	"ukrainian": "імбир",
-	"german": "der Ingwer",
-	"spanish": "el jengibre",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 50,
-	"category": "owoce i warzywa",
-	"polish": "chrzan",
-	"english": "horseradish",
-	"ukrainian": "хрін",
-	"german": "der Meerrettich",
-	"spanish": "el rábano picante",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 51,
-	"category": "alfabet ukraiński",
-	"polish": "a",
-	"ukrainian": "а/А",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 52,
-	"category": "alfabet ukraiński",
-	"polish": "be",
-	"ukrainian": "б/Б",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 53,
-	"category": "alfabet ukraiński",
-	"polish": "we",
-	"ukrainian": "в/В",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 54,
-	"category": "alfabet ukraiński",
-	"polish": "he",
-	"ukrainian": "г/Г",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 55,
-	"category": "alfabet ukraiński",
-	"polish": "h miękkie",
-	"ukrainian": "ґ/Ґ",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 56,
-	"category": "alfabet ukraiński",
-	"polish": "de",
-	"ukrainian": "д/Д",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 57,
-	"category": "alfabet ukraiński",
-	"polish": "e",
-	"ukrainian": "е/Е",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 58,
-	"category": "alfabet ukraiński",
-	"polish": "je",
-	"ukrainian": "є/Є",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 59,
-	"category": "alfabet ukraiński",
-	"polish": "ż",
-	"ukrainian": "ж/Ж",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 60,
-	"category": "alfabet ukraiński",
-	"polish": "z",
-	"ukrainian": "з/З",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 61,
-	"category": "alfabet ukraiński",
-	"polish": "y",
-	"ukrainian": "и/И",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 62,
-	"category": "alfabet ukraiński",
-	"polish": "i",
-	"ukrainian": "і/І",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 63,
-	"category": "alfabet ukraiński",
-	"polish": "ji",
-	"ukrainian": "ї/Ї",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 64,
-	"category": "alfabet ukraiński",
-	"polish": "j",
-	"ukrainian": "й/Й",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 65,
-	"category": "alfabet ukraiński",
-	"polish": "ka",
-	"ukrainian": "к/К",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 66,
-	"category": "alfabet ukraiński",
-	"polish": "el",
-	"ukrainian": "л/Л",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 67,
-	"category": "alfabet ukraiński",
-	"polish": "em",
-	"ukrainian": "м/М",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 68,
-	"category": "alfabet ukraiński",
-	"polish": "en",
-	"ukrainian": "н/Н",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 69,
-	"category": "alfabet ukraiński",
-	"polish": "o",
-	"ukrainian": "о/О",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 70,
-	"category": "alfabet ukraiński",
-	"polish": "pe",
-	"ukrainian": "п/П",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 71,
-	"category": "alfabet ukraiński",
-	"polish": "er",
-	"ukrainian": "р/Р",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 72,
-	"category": "alfabet ukraiński",
-	"polish": "es",
-	"ukrainian": "с/С",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 73,
-	"category": "alfabet ukraiński",
-	"polish": "te",
-	"ukrainian": "т/Т",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 74,
-	"category": "alfabet ukraiński",
-	"polish": "u",
-	"ukrainian": "у/У",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 75,
-	"category": "alfabet ukraiński",
-	"polish": "ef",
-	"ukrainian": "ф/Ф",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 76,
-	"category": "alfabet ukraiński",
-	"polish": "cha",
-	"ukrainian": "х/Х",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 77,
-	"category": "alfabet ukraiński",
-	"polish": "ce",
-	"ukrainian": "ц/Ц",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 78,
-	"category": "alfabet ukraiński",
-	"polish": "cz",
-	"ukrainian": "ч/Ч",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 79,
-	"category": "alfabet ukraiński",
-	"polish": "sz",
-	"ukrainian": "ш/Ш",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 80,
-	"category": "alfabet ukraiński",
-	"polish": "szy",
-	"ukrainian": "щ/Щ",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 81,
-	"category": "alfabet ukraiński",
-	"polish": "znak miękki",
-	"ukrainian": "ь/Ь",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 82,
-	"category": "alfabet ukraiński",
-	"polish": "yu",
-	"ukrainian": "ю/Ю",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 83,
-	"category": "alfabet ukraiński",
-	"polish": "ja",
-	"ukrainian": "я/Я",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 84,
-	"category": "wierszyk o Ali",
-	"polish": "Ala ma kota",
-	"english": "Ala has a cat",
-	"ukrainian": "Аля має кота",
-	"german": "Ala hat eine Katze",
-	"spanish": "Ala tiene un gato",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 85,
-	"category": "wierszyk o Ali",
-	"polish": "Kot ma Alę",
-	"english": "The cat has Ala",
-	"ukrainian": "Кіт має Алю",
-	"german": "Die Katze hat Ala",
-	"spanish": "El gato tiene a Ala",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 86,
-	"category": "wierszyk o Ali",
-	"polish": "Ala i kot",
-	"english": "Ala and the cat",
-	"ukrainian": "Аля і кіт",
-	"german": "Ala und die Katze",
-	"spanish": "Ala y el gato",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 87,
-	"category": "wierszyk o Ali",
-	"polish": "razem mieszkają",
-	"english": "live together",
-	"ukrainian": "живуть разом",
-	"german": "wohnen zusammen",
-	"spanish": "viven juntos",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 88,
-	"category": "wierszyk o Ali",
-	"polish": "Kot się bawi",
-	"english": "The cat plays",
-	"ukrainian": "Кіт грається",
-	"german": "Die Katze spielt",
-	"spanish": "El gato juega",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 89,
-	"category": "wierszyk o Ali",
-	"polish": "Ala się cieszy",
-	"english": "Ala is happy",
-	"ukrainian": "Аля радіє",
-	"german": "Ala freut sich",
-	"spanish": "Ala está feliz",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 90,
-	"category": "wierszyk o Ali",
-	"polish": "Ala i kot",
-	"english": "Ala and the cat",
-	"ukrainian": "Аля і кіт",
-	"german": "Ala und die Katze",
-	"spanish": "Ala y el gato",
-	"difficulty": "Trudne"
-  },
-  {
-	"id": 91,
-	"category": "wierszyk o Ali",
-	"polish": "są bardzo szczęśliwi",
-	"english": "are very happy",
-	"ukrainian": "дуже щасливі",
-	"german": "sind sehr glücklich",
-	"spanish": "están muy felices",
-	"difficulty": "Trudne"
-  }
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "apple",
+		"german": "der Apfel",
+		"id": 1.0,
+		"polish": "jabłko",
+		"spanish": "la manzana",
+		"ukrainian": "яблуко"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "banana",
+		"german": "die Banane",
+		"id": 2.0,
+		"polish": "banan",
+		"spanish": "el plátano",
+		"ukrainian": "банан"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "orange",
+		"german": "die Orange",
+		"id": 3.0,
+		"polish": "pomarańcza",
+		"spanish": "la naranja",
+		"ukrainian": "апельсин"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "pear",
+		"german": "die Birne",
+		"id": 4.0,
+		"polish": "gruszka",
+		"spanish": "la pera",
+		"ukrainian": "груша"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "grape",
+		"german": "die Traube",
+		"id": 5.0,
+		"polish": "winogrono",
+		"spanish": "la uva",
+		"ukrainian": "виноград"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "strawberry",
+		"german": "die Erdbeere",
+		"id": 6.0,
+		"polish": "truskawka",
+		"spanish": "la fresa",
+		"ukrainian": "полуниця"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "raspberry",
+		"german": "die Himbeere",
+		"id": 7.0,
+		"polish": "malina",
+		"spanish": "la frambuesa",
+		"ukrainian": "малина"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "blueberry",
+		"german": "die Heidelbeere",
+		"id": 8.0,
+		"polish": "borówka",
+		"spanish": "el arándano",
+		"ukrainian": "чорниця"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "lemon",
+		"german": "die Zitrone",
+		"id": 9.0,
+		"polish": "cytryna",
+		"spanish": "el limón",
+		"ukrainian": "лимон"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "lime",
+		"german": "die Limette",
+		"id": 10.0,
+		"polish": "limonka",
+		"spanish": "la lima",
+		"ukrainian": "лайм"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "mandarin",
+		"german": "die Mandarine",
+		"id": 11.0,
+		"polish": "mandarynka",
+		"spanish": "la mandarina",
+		"ukrainian": "мандрин"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "watermelon",
+		"german": "die Wassermelone",
+		"id": 12.0,
+		"polish": "arbuz",
+		"spanish": "la sandía",
+		"ukrainian": "кавун"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "melon",
+		"german": "die Melone",
+		"id": 13.0,
+		"polish": "melon",
+		"spanish": "el melón",
+		"ukrainian": "диня"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "kiwi",
+		"german": "die Kiwi",
+		"id": 14.0,
+		"polish": "kiwi",
+		"spanish": "el kiwi",
+		"ukrainian": "ківі"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "pineapple",
+		"german": "die Ananas",
+		"id": 15.0,
+		"polish": "ananas",
+		"spanish": "la piña",
+		"ukrainian": "ананас"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "avocado",
+		"german": "die Avocado",
+		"id": 16.0,
+		"polish": "awokado",
+		"spanish": "el aguacate",
+		"ukrainian": "авокадо"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "peach",
+		"german": "der Pfirsich",
+		"id": 17.0,
+		"polish": "brzoskwinia",
+		"spanish": "el melocotón",
+		"ukrainian": "персик"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "apricot",
+		"german": "die Aprikose",
+		"id": 18.0,
+		"polish": "morela",
+		"spanish": "el albaricoque",
+		"ukrainian": "абрикос"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "plum",
+		"german": "die Pflaume",
+		"id": 19.0,
+		"polish": "śliwka",
+		"spanish": "la ciruela",
+		"ukrainian": "слива"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "sweet cherry",
+		"german": "die Süßkirsche",
+		"id": 20.0,
+		"polish": "czereśnia",
+		"spanish": "la cereza",
+		"ukrainian": "черешня"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "sour cherry",
+		"german": "die Sauerkirsche",
+		"id": 21.0,
+		"polish": "wiśnia",
+		"spanish": "la guinda",
+		"ukrainian": "вишня"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "currant",
+		"german": "die Johannisbeere",
+		"id": 22.0,
+		"polish": "porzeczka",
+		"spanish": "la grosella",
+		"ukrainian": "смородина"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "blackberry",
+		"german": "die Brombeere",
+		"id": 23.0,
+		"polish": "jeżyna",
+		"spanish": "la mora",
+		"ukrainian": "ожина"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "wild strawberry",
+		"german": "die Walderdbeere",
+		"id": 24.0,
+		"polish": "poziomka",
+		"spanish": "la fresa silvestre",
+		"ukrainian": "суниця"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "pomegranate",
+		"german": "der Granatapfel",
+		"id": 25.0,
+		"polish": "granat",
+		"spanish": "la granada",
+		"ukrainian": "гранат"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "potato",
+		"german": "die Kartoffel",
+		"id": 26.0,
+		"polish": "ziemniak",
+		"spanish": "la patata",
+		"ukrainian": "картопля"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "carrot",
+		"german": "die Karotte",
+		"id": 27.0,
+		"polish": "marchewka",
+		"spanish": "la zanahoria",
+		"ukrainian": "морква"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "cucumber",
+		"german": "die Gurke",
+		"id": 28.0,
+		"polish": "ogórek",
+		"spanish": "el pepino",
+		"ukrainian": "огірок"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "tomato",
+		"german": "die Tomate",
+		"id": 29.0,
+		"polish": "pomidor",
+		"spanish": "el tomate",
+		"ukrainian": "помідор"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "pepper",
+		"german": "die Paprika",
+		"id": 30.0,
+		"polish": "papryka",
+		"spanish": "el pimiento",
+		"ukrainian": "перець"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "onion",
+		"german": "die Zwiebel",
+		"id": 31.0,
+		"polish": "cebula",
+		"spanish": "la cebolla",
+		"ukrainian": "цибуля"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "garlic",
+		"german": "der Knoblauch",
+		"id": 32.0,
+		"polish": "czosnek",
+		"spanish": "el ajo",
+		"ukrainian": "часник"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "lettuce",
+		"german": "der Kopfsalat",
+		"id": 33.0,
+		"polish": "sałata",
+		"spanish": "la lechuga",
+		"ukrainian": "салат"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "cabbage",
+		"german": "der Kohl",
+		"id": 34.0,
+		"polish": "kapusta",
+		"spanish": "la col",
+		"ukrainian": "капуста"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "broccoli",
+		"german": "der Brokkoli",
+		"id": 35.0,
+		"polish": "brokuł",
+		"spanish": "el brócoli",
+		"ukrainian": "броколі"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "cauliflower",
+		"german": "der Blumenkohl",
+		"id": 36.0,
+		"polish": "kalafior",
+		"spanish": "la coliflor",
+		"ukrainian": "цвітна капуста"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "zucchini",
+		"german": "die Zucchini",
+		"id": 37.0,
+		"polish": "cukinia",
+		"spanish": "el calabacín",
+		"ukrainian": "кабачок"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "eggplant",
+		"german": "die Aubergine",
+		"id": 38.0,
+		"polish": "bakłażan",
+		"spanish": "la berenjena",
+		"ukrainian": "баклажан"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "spinach",
+		"german": "der Spinat",
+		"id": 39.0,
+		"polish": "szpinak",
+		"spanish": "la espinaca",
+		"ukrainian": "шпинат"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "arugula",
+		"german": "der Rucola",
+		"id": 40.0,
+		"polish": "rukola",
+		"spanish": "la rúcula",
+		"ukrainian": "рукола"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "kale",
+		"german": "der Grünkohl",
+		"id": 41.0,
+		"polish": "jarmuż",
+		"spanish": "la col rizada",
+		"ukrainian": "капуста кучерява"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "beetroot",
+		"german": "die Rote Bete",
+		"id": 42.0,
+		"polish": "burak",
+		"spanish": "la remolacha",
+		"ukrainian": "буряк"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Średnie",
+		"english": "celery",
+		"german": "der Sellerie",
+		"id": 43.0,
+		"polish": "seler",
+		"spanish": "el apio",
+		"ukrainian": "селера"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "parsley",
+		"german": "die Petersilie",
+		"id": 44.0,
+		"polish": "pietruszka",
+		"spanish": "el perejil",
+		"ukrainian": "петрушка"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "dill",
+		"german": "der Dill",
+		"id": 45.0,
+		"polish": "koper",
+		"spanish": "el eneldo",
+		"ukrainian": "кріп"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Łatwe",
+		"english": "peas",
+		"german": "die Erbse",
+		"id": 46.0,
+		"polish": "groszek",
+		"spanish": "el guisante",
+		"ukrainian": "горох"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "bean",
+		"german": "die Bohne",
+		"id": 47.0,
+		"polish": "fasola",
+		"spanish": "la judía",
+		"ukrainian": "квасоля"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "pumpkin",
+		"german": "der Kürbis",
+		"id": 48.0,
+		"polish": "dynia",
+		"spanish": "la calabaza",
+		"ukrainian": "гарбуз"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "ginger",
+		"german": "der Ingwer",
+		"id": 49.0,
+		"polish": "imbir",
+		"spanish": "el jengibre",
+		"ukrainian": "імбир"
+	},
+	{
+		"category": "owoce i warzywa",
+		"difficulty": "Trudne",
+		"english": "horseradish",
+		"german": "der Meerrettich",
+		"id": 50.0,
+		"polish": "chrzan",
+		"spanish": "el rábano picante",
+		"ukrainian": "хрін"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 51.0,
+		"polish": "a",
+		"ukrainian": "а/А"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 52.0,
+		"polish": "be",
+		"ukrainian": "б/Б"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 53.0,
+		"polish": "we",
+		"ukrainian": "в/В"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 54.0,
+		"polish": "he",
+		"ukrainian": "г/Г"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 55.0,
+		"polish": "h miękkie",
+		"ukrainian": "ґ/Ґ"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 56.0,
+		"polish": "de",
+		"ukrainian": "д/Д"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 57.0,
+		"polish": "e",
+		"ukrainian": "е/Е"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 58.0,
+		"polish": "je",
+		"ukrainian": "є/Є"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 59.0,
+		"polish": "ż",
+		"ukrainian": "ж/Ж"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 60.0,
+		"polish": "z",
+		"ukrainian": "з/З"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 61.0,
+		"polish": "y",
+		"ukrainian": "и/И"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 62.0,
+		"polish": "i",
+		"ukrainian": "і/І"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 63.0,
+		"polish": "ji",
+		"ukrainian": "ї/Ї"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 64.0,
+		"polish": "j",
+		"ukrainian": "й/Й"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 65.0,
+		"polish": "ka",
+		"ukrainian": "к/К"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 66.0,
+		"polish": "el",
+		"ukrainian": "л/Л"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 67.0,
+		"polish": "em",
+		"ukrainian": "м/М"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 68.0,
+		"polish": "en",
+		"ukrainian": "н/Н"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 69.0,
+		"polish": "o",
+		"ukrainian": "о/О"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 70.0,
+		"polish": "pe",
+		"ukrainian": "п/П"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 71.0,
+		"polish": "er",
+		"ukrainian": "р/Р"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 72.0,
+		"polish": "es",
+		"ukrainian": "с/С"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 73.0,
+		"polish": "te",
+		"ukrainian": "т/Т"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 74.0,
+		"polish": "u",
+		"ukrainian": "у/У"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 75.0,
+		"polish": "ef",
+		"ukrainian": "ф/Ф"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 76.0,
+		"polish": "cha",
+		"ukrainian": "х/Х"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 77.0,
+		"polish": "ce",
+		"ukrainian": "ц/Ц"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 78.0,
+		"polish": "cz",
+		"ukrainian": "ч/Ч"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 79.0,
+		"polish": "sz",
+		"ukrainian": "ш/Ш"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 80.0,
+		"polish": "szy",
+		"ukrainian": "щ/Щ"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 81.0,
+		"polish": "znak miękki",
+		"ukrainian": "ь/Ь"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 82.0,
+		"polish": "yu",
+		"ukrainian": "ю/Ю"
+	},
+	{
+		"category": "alfabet ukraiński",
+		"difficulty": "Trudne",
+		"id": 83.0,
+		"polish": "ja",
+		"ukrainian": "я/Я"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "Ala has a cat",
+		"german": "Ala hat eine Katze",
+		"id": 84.0,
+		"polish": "Ala ma kota",
+		"spanish": "Ala tiene un gato",
+		"ukrainian": "Аля має кота"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "The cat has Ala",
+		"german": "Die Katze hat Ala",
+		"id": 85.0,
+		"polish": "Kot ma Alę",
+		"spanish": "El gato tiene a Ala",
+		"ukrainian": "Кіт має Алю"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "Ala and the cat",
+		"german": "Ala und die Katze",
+		"id": 86.0,
+		"polish": "Ala i kot",
+		"spanish": "Ala y el gato",
+		"ukrainian": "Аля і кіт"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "live together",
+		"german": "wohnen zusammen",
+		"id": 87.0,
+		"polish": "razem mieszkają",
+		"spanish": "viven juntos",
+		"ukrainian": "живуть разом"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "The cat plays",
+		"german": "Die Katze spielt",
+		"id": 88.0,
+		"polish": "Kot się bawi",
+		"spanish": "El gato juega",
+		"ukrainian": "Кіт грається"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "Ala is happy",
+		"german": "Ala freut sich",
+		"id": 89.0,
+		"polish": "Ala się cieszy",
+		"spanish": "Ala está feliz",
+		"ukrainian": "Аля радіє"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "Ala and the cat",
+		"german": "Ala und die Katze",
+		"id": 90.0,
+		"polish": "Ala i kot",
+		"spanish": "Ala y el gato",
+		"ukrainian": "Аля і кіт"
+	},
+	{
+		"category": "wierszyk o Ali",
+		"difficulty": "Trudne",
+		"english": "are very happy",
+		"german": "sind sehr glücklich",
+		"id": 91.0,
+		"polish": "są bardzo szczęśliwi",
+		"spanish": "están muy felices",
+		"ukrainian": "дуже щасливі"
+	}
 ]

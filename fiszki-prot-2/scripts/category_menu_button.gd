@@ -2,6 +2,7 @@ extends MenuButton
 
 @onready var game_manager = get_node("/root/GameManager")
 @onready var words_library_path := "res://assets/words_library.json"
+@onready var language_choice_screen := get_parent()
 @onready var language_one_menu_button := $"../LanguageOneMenuButton"
 @onready var language_two_menu_button := $"../LanguageTwoMenuButton"
 @onready var all_languages: Array = game_manager.all_languages
@@ -58,6 +59,9 @@ func _on_category_selected(id: int) -> void:
 	language_two_menu_button.generate_languages_menu(available_languages)
 	language_two_menu_button.disabled = false
 	language_two_menu_button.text = "Język drugi"
+	language_choice_screen.is_category_choosen = true
+	language_choice_screen.is_lang_one_choosen = false
+	language_choice_screen.is_lang_two_choosen = false
 
 # 🔵 Funkcja 5. Sprawdza dostępne języki w kategorii
 func check_category_languages(category: String) -> Array:
