@@ -16,6 +16,7 @@ var difficulty: String = "Wszystkie"
 
 func _ready() -> void:
 	set_labels()
+	difficulty_color.color = game_manager.color_all
 
 func set_labels() -> void:
 	category_label.text += game_manager.category_to_learn
@@ -94,15 +95,15 @@ func _on_difficulty_button_pressed() -> void:
 		difficulty = "Średnie"
 		difficulty_label.text = "Trudność fiszek: Średnie"
 		difficulty_color.color = game_manager.color_medium
-	if difficulty == "Średnie":
+	elif difficulty == "Średnie":
 		difficulty = "Trudne"
 		difficulty_label.text = "Trudność fiszek: Trudne"
 		difficulty_color.color = game_manager.color_hard
-	if difficulty == "Trudne":
+	elif difficulty == "Trudne":
 		difficulty = "Wszystkie"
 		difficulty_label.text = "Trudność fiszek: Wszystkie"
 		difficulty_color.color = game_manager.color_all
-	if difficulty == "Wszystkie":
+	elif difficulty == "Wszystkie":
 		difficulty = "Łatwe"
 		difficulty_label.text = "Trudność fiszek: Łatwe"
 		difficulty_color.color = game_manager.color_easy

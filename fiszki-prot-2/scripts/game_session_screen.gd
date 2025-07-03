@@ -126,6 +126,8 @@ func _on_repeat_button_pressed() -> void:
 func _on_throw_out_button_pressed() -> void:
 	# Remove the flashcard
 	game_manager.array_of_words.remove_at(actual_fishcard_index)
+	if actual_fishcard_index == game_manager.array_of_words.size() - 1:
+		actual_fishcard_index = 0
 	words_number_label.text = "Liczba fiszek: "
 	game_manager.number_of_cards -= 1
 	words_number_label.text += str(game_manager.number_of_cards)
