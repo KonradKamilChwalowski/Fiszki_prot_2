@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://copkxn0y1rctd"]
+[gd_scene load_steps=4 format=3 uid="uid://copkxn0y1rctd"]
 
 [ext_resource type="Script" uid="uid://d0o5v8d1at4aw" path="res://scripts/menu_screen.gd" id="1_3kcfb"]
 [ext_resource type="PackedScene" uid="uid://tmvhsvwnvkx6" path="res://scenes/button.tscn" id="1_ep2em"]
+[ext_resource type="Texture2D" uid="uid://bonukes8qqi10" path="res://assets/Logo.png" id="2_2ucu0"]
 
 [node name="MenuScreen" type="Node2D"]
 script = ExtResource("1_3kcfb")
 
 [node name="Screen Name" type="RichTextLabel" parent="."]
+visible = false
 offset_top = 40.0
 offset_right = 360.0
 offset_bottom = 80.0
@@ -14,6 +16,14 @@ theme_override_font_sizes/normal_font_size = 20
 text = "Menu"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Logo" type="TextureRect" parent="."]
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 515.0
+offset_bottom = 515.0
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_2ucu0")
 
 [node name="StartButton" parent="." instance=ExtResource("1_ep2em")]
 z_index = 1

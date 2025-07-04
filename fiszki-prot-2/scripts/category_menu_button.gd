@@ -47,11 +47,14 @@ func create_menu_options(categories: Array) -> void:
 	
 	for i in categories.size():
 		popup.add_item(categories[i], i)
+	
+	categories.sort_custom(func(a, b):
+			return a[0] < b[0])
 
 # 🔵 Funkcja 4. Obsługa wyboru kategorii
 func _on_category_selected(id: int) -> void:
 	game_manager.category_to_learn = categories_tab[id]
-	text = game_manager.category_to_learn.capitalize()
+	text = game_manager.category_to_learn
 	var available_languages = check_category_languages(game_manager.category_to_learn)
 	language_one_menu_button.generate_languages_menu(available_languages)
 	language_one_menu_button.disabled = false
