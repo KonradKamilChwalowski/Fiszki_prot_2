@@ -17,12 +17,21 @@ text = "Menu"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="EasterEggButton" type="Button" parent="."]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 305.0
+offset_bottom = 305.0
+flat = true
+
 [node name="Logo" type="TextureRect" parent="."]
-offset_left = 15.0
-offset_top = 15.0
-offset_right = 515.0
-offset_bottom = 515.0
+offset_left = -72.5
+offset_top = -72.5
+offset_right = 427.5
+offset_bottom = 427.5
 scale = Vector2(0.65, 0.65)
+pivot_offset = Vector2(250, 250)
+mouse_filter = 2
 texture = ExtResource("2_2ucu0")
 
 [node name="StartButton" parent="." instance=ExtResource("1_ep2em")]
@@ -65,6 +74,7 @@ offset_bottom = 580.0
 [node name="RichTextLabel" parent="ExitButton" index="1"]
 text = "Wyjście"
 
+[connection signal="pressed" from="EasterEggButton" to="." method="_on_easter_egg_button_pressed"]
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="LibraryButton" to="." method="_on_library_button_pressed"]
 [connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
