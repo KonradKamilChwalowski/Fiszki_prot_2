@@ -3,6 +3,9 @@ extends MenuButton
 @onready var game_manager = get_node("/root/GameManager")
 @onready var language_choice_screen := get_parent()
 
+func _ready() -> void:
+	self.add_theme_font_size_override("font_size", game_manager.screen_resolutions[game_manager.actual_resolution_index][2] * 16)
+
 func generate_languages_menu(languages: Array) -> void:
 	var popup = get_popup()
 	popup.clear()

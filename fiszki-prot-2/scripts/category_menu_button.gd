@@ -14,6 +14,7 @@ func _ready() -> void:
 	var categories = list_categories()
 	create_menu_options(categories)
 	get_popup().connect("id_pressed", Callable(self, "_on_category_selected"))
+	self.add_theme_font_size_override("font_size", game_manager.screen_resolutions[game_manager.actual_resolution_index][2] * 16)
 
 # this funcion lists categories from JSON
 func list_categories() -> Array:

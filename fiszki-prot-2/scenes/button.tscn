@@ -3,6 +3,7 @@
 [node name="Button" type="Button"]
 offset_right = 100.0
 offset_bottom = 40.0
+focus_mode = 0
 flat = true
 
 [node name="ColorRect" type="ColorRect" parent="."]

@@ -28,6 +28,7 @@ var updated_difficulties: Array = []
 func _ready() -> void:
 	print(game_manager.category_to_learn)
 	set_labels()
+	game_manager.scale_for_resolution(self)
 	game_manager.shuffle_array_of_words()
 	updated_difficulties.clear()
 	for word in game_manager.array_of_words:
@@ -89,6 +90,7 @@ func _process(delta: float) -> void:
 func _on_flash_card_button_pressed() -> void:
 	# The flashcard is rotating in _process, so here we just start proces
 	if not is_rotating:
+		flashcard_button.pivot_offset = flashcard_button.size / 2
 		is_rotating = true
 		can_switch_language = true
 		rotation_elapsed = 0.0

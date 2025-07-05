@@ -6,9 +6,11 @@ var is_category_choosen: bool = false
 var is_lang_one_choosen: bool = false
 var is_lang_two_choosen: bool = false
 
+func _ready() -> void:
+	game_manager.scale_for_resolution(self)
+
 func _on_return_button_pressed() -> void:
 	game_manager.change_screen("menu_screen")
-
 
 func _on_next_button_pressed() -> void:
 	#game_manager.change_screen("session_settings_screen")

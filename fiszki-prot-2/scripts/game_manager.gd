@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var background: ColorRect = $ColorRect
+
 # SCREENS
 var menu_screen := load("res://screens/menu_screen.tscn")
 var language_choice_screen := load("res://screens/language_choice_screen.tscn")
@@ -29,10 +31,24 @@ var color_easy: Color = Color(0.0, 0.6, 0.0, 0.6)
 var color_medium: Color = Color(0.6, 0.6, 0.0, 0.6)
 var color_hard: Color = Color(0.6, 0.0, 0.0, 0.6)
 var color_all: Color = Color(0.4, 0.4, 0.4, 0.6)
+var screen_resolutions: Array = [[360, 640, 1.0], [540, 960, 1.5], [720, 1280, 2.0], [1080, 1920, 3.0]]
+var actual_resolution_index: int = 1
 
 func _ready() -> void:
+	# RESOLUTION
+	DisplayServer.window_set_size(Vector2i(screen_resolutions[actual_resolution_index][0], screen_resolutions[actual_resolution_index][1]))
+	background.scale = Vector2(screen_resolutions[actual_resolution_index][2], screen_resolutions[actual_resolution_index][2])
+	# SCREEN
 	actual_screen = menu_screen.instantiate()
 	add_child(actual_screen)
+
+func scale_for_resolution(scene: Node2D) -> void:
+	for child in scene.get_children():
+		child.position *= screen_resolutions[actual_resolution_index][2]
+		child.size *= screen_resolutions[actual_resolution_index][2]
+		for grandchild in child.get_children():
+			if grandchild is RichTextLabel:
+				grandchild.add_theme_font_size_override("normal_font_size", screen_resolutions[actual_resolution_index][2] * 16)
 
 func shuffle_array_of_words() -> void:
 	if sorting_type == "Alfabetycznie":

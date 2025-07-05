@@ -17,6 +17,7 @@ var difficulty: String = "Wszystkie"
 func _ready() -> void:
 	set_labels()
 	difficulty_color.color = game_manager.color_all
+	game_manager.scale_for_resolution(self)
 
 func set_labels() -> void:
 	category_label.text += game_manager.category_to_learn
