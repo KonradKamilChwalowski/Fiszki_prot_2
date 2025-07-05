@@ -41,7 +41,7 @@ func list_categories() -> Array:
 	categories_tab = categories_array
 	return categories_array
 
-# 🔵 Funkcja 3. Tworzy opcje w menu
+# Tworzy opcje w menu
 func create_menu_options(categories: Array) -> void:
 	var popup = get_popup()
 	popup.clear()
@@ -52,7 +52,7 @@ func create_menu_options(categories: Array) -> void:
 	categories.sort_custom(func(a, b):
 			return a[0] < b[0])
 
-# 🔵 Funkcja 4. Obsługa wyboru kategorii
+# Obsługa wyboru kategorii
 func _on_category_selected(id: int) -> void:
 	game_manager.category_to_learn = categories_tab[id]
 	text = game_manager.category_to_learn
@@ -67,7 +67,7 @@ func _on_category_selected(id: int) -> void:
 	language_choice_screen.is_lang_one_choosen = false
 	language_choice_screen.is_lang_two_choosen = false
 
-# 🔵 Funkcja 5. Sprawdza dostępne języki w kategorii
+# Sprawdza dostępne języki w kategorii
 func check_category_languages(category: String) -> Array:
 	if special_categories.has(category):
 		return special_categories[category]

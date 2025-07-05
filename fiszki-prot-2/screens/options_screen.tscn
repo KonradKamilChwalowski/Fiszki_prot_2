@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctfdttp775mmp"]
+[gd_scene load_steps=4 format=3 uid="uid://ctfdttp775mmp"]
 
 [ext_resource type="Script" uid="uid://c66p37fjl85yg" path="res://scripts/options_screen.gd" id="1_5sh15"]
+[ext_resource type="Script" uid="uid://b85ec2sa2h8o" path="res://scripts/options_resolution_button.gd" id="2_5v8gw"]
 [ext_resource type="PackedScene" uid="uid://tmvhsvwnvkx6" path="res://scenes/button.tscn" id="2_jud2a"]
 
 [node name="OptionsScreen" type="Node2D"]
@@ -15,11 +16,20 @@ text = "NIE DZIAŁA, W BUDOWIE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="OptionsResolutionButton" type="MenuButton" parent="."]
+offset_left = 40.0
+offset_top = 100.0
+offset_right = 320.0
+offset_bottom = 160.0
+text = "Rozdzielczość"
+flat = false
+script = ExtResource("2_5v8gw")
+
 [node name="ReturnButton" parent="." instance=ExtResource("2_jud2a")]
 offset_left = 105.0
-offset_top = 100.0
+offset_top = 520.0
 offset_right = 255.0
-offset_bottom = 160.0
+offset_bottom = 580.0
 
 [node name="RichTextLabel" parent="ReturnButton" index="1"]
 text = "Powrót"
