@@ -16,6 +16,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CategoryLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(360, 40)
 offset_top = 80.0
 offset_right = 360.0
 offset_bottom = 120.0
@@ -25,6 +26,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="LanguagesLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(360, 40)
 offset_top = 120.0
 offset_right = 360.0
 offset_bottom = 160.0
@@ -34,6 +36,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="WordsNumberLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(360, 40)
 offset_top = 160.0
 offset_right = 360.0
 offset_bottom = 200.0

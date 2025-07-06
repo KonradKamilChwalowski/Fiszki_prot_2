@@ -26,7 +26,6 @@ var count_hints: int = 0
 var updated_difficulties: Array = []
 
 func _ready() -> void:
-	print(game_manager.category_to_learn)
 	set_labels()
 	game_manager.scale_for_resolution(self)
 	game_manager.shuffle_array_of_words()
@@ -91,10 +90,10 @@ func _on_flash_card_button_pressed() -> void:
 	# The flashcard is rotating in _process, so here we just start proces
 	if not is_rotating:
 		flashcard_button.pivot_offset = flashcard_button.size / 2
-		is_rotating = true
 		can_switch_language = true
 		rotation_elapsed = 0.0
 		flashcard_button.disabled = true
+		is_rotating = true
 
 
 func _on_hint_button_pressed() -> void:
@@ -128,7 +127,8 @@ func _on_repeat_button_pressed() -> void:
 func _on_throw_out_button_pressed() -> void:
 	# Remove the flashcard
 	game_manager.array_of_words.remove_at(actual_fishcard_index)
-	if actual_fishcard_index == game_manager.array_of_words.size() - 1:
+	
+	if actual_fishcard_index >= game_manager.array_of_words.size():
 		actual_fishcard_index = 0
 	words_number_label.text = "Liczba fiszek: "
 	game_manager.number_of_cards -= 1

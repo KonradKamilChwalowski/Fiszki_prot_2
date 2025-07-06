@@ -43,16 +43,22 @@ func _ready() -> void:
 	add_child(actual_screen)
 
 func scale_for_resolution(scene: Node2D) -> void:
+	var scale_factor: float = screen_resolutions[actual_resolution_index][2]
 	# WINDOW RESOLUTION
 	DisplayServer.window_set_size(Vector2i(screen_resolutions[actual_resolution_index][0], screen_resolutions[actual_resolution_index][1]))
 	background.scale = Vector2(screen_resolutions[actual_resolution_index][2], screen_resolutions[actual_resolution_index][2])
 	# ALL OTHER RESOLUTION
 	for child in scene.get_children():
-		child.position *= screen_resolutions[actual_resolution_index][2]
-		child.size *= screen_resolutions[actual_resolution_index][2]
+		child.position *= scale_factor
+		if child is MenuButton:
+			child.custom_minimum_size *= scale_factor
+		else:
+			child.size *= scale_factor
+		if child is RichTextLabel:
+			child.add_theme_font_size_override("normal_font_size", scale_factor * 16)
 		for grandchild in child.get_children():
 			if grandchild is RichTextLabel:
-				grandchild.add_theme_font_size_override("normal_font_size", screen_resolutions[actual_resolution_index][2] * 16)
+				grandchild.add_theme_font_size_override("normal_font_size", scale_factor * 16)
 
 func shuffle_array_of_words() -> void:
 	if sorting_type == "Alfabetycznie":

@@ -13,6 +13,7 @@ func generate_languages_menu(languages: Array) -> void:
 	for i in languages.size():
 		var lang = languages[i]
 		popup.add_item(lang, i)
+		popup.add_theme_font_size_override("font_size", game_manager.screen_resolutions[game_manager.actual_resolution_index][2] * 16)
 
 	popup.connect("id_pressed", Callable(self, "_on_language_selected"))
 

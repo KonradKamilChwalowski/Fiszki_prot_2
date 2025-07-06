@@ -19,6 +19,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CategoryMenuButton" type="MenuButton" parent="."]
+custom_minimum_size = Vector2(280, 60)
 offset_left = 40.0
 offset_top = 240.0
 offset_right = 320.0
@@ -28,6 +29,7 @@ flat = false
 script = ExtResource("2_u3nhb")
 
 [node name="LanguageOneMenuButton" type="MenuButton" parent="."]
+custom_minimum_size = Vector2(280, 60)
 offset_left = 40.0
 offset_top = 310.0
 offset_right = 320.0
@@ -39,6 +41,7 @@ autowrap_mode = 3
 script = ExtResource("3_u3nhb")
 
 [node name="LanguageTwoMenuButton" type="MenuButton" parent="."]
+custom_minimum_size = Vector2(280, 60)
 offset_left = 40.0
 offset_top = 380.0
 offset_right = 320.0
