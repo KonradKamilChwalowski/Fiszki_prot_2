@@ -11,15 +11,15 @@ offset_top = 40.0
 offset_right = 360.0
 offset_bottom = 80.0
 theme_override_font_sizes/normal_font_size = 20
-text = "NIE DZIAŁA, W BUDOWIE"
+text = "Biblioteka (na razie w budowie)"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ReturnButton" parent="." instance=ExtResource("2_vmqsj")]
 offset_left = 105.0
-offset_top = 100.0
+offset_top = 520.0
 offset_right = 255.0
-offset_bottom = 160.0
+offset_bottom = 580.0
 
 [node name="RichTextLabel" parent="ReturnButton" index="1"]
 text = "Powrót"
