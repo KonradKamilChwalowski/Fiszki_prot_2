@@ -51,6 +51,15 @@ text = "Losowanie: "
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="ExitButton" parent="." instance=ExtResource("1_bcwfw")]
+offset_left = 300.0
+offset_top = 20.0
+offset_right = 340.0
+offset_bottom = 60.0
+
+[node name="RichTextLabel" parent="ExitButton" index="1"]
+text = "X"
+
 [node name="FlashCardButton" parent="." instance=ExtResource("1_bcwfw")]
 offset_left = 40.0
 offset_top = 240.0
@@ -97,12 +106,14 @@ offset_bottom = 580.0
 [node name="RichTextLabel" parent="ThrowOutButton" index="1"]
 text = "Już umiem!"
 
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="FlashCardButton" to="." method="_on_flash_card_button_pressed"]
 [connection signal="pressed" from="HintButton" to="." method="_on_hint_button_pressed"]
 [connection signal="pressed" from="DifficultyButton" to="." method="_on_difficulty_button_pressed"]
 [connection signal="pressed" from="RepeatButton" to="." method="_on_repeat_button_pressed"]
 [connection signal="pressed" from="ThrowOutButton" to="." method="_on_throw_out_button_pressed"]
 
+[editable path="ExitButton"]
 [editable path="FlashCardButton"]
 [editable path="HintButton"]
 [editable path="DifficultyButton"]

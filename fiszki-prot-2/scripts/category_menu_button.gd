@@ -1,7 +1,7 @@
 extends MenuButton
 
 @onready var game_manager = get_node("/root/GameManager")
-@onready var words_library_path := "res://assets/words_library.json"
+@onready var words_library_path := "res://assets/languages_words_library.json"
 @onready var language_choice_screen := get_parent()
 @onready var language_one_menu_button := $"../LanguageOneMenuButton"
 @onready var language_two_menu_button := $"../LanguageTwoMenuButton"

@@ -32,7 +32,7 @@ var color_medium: Color = Color(0.6, 0.6, 0.0, 0.6)
 var color_hard: Color = Color(0.6, 0.0, 0.0, 0.6)
 var color_all: Color = Color(0.4, 0.4, 0.4, 0.6)
 var screen_resolutions: Array = [[360, 640, 1.0], [540, 960, 1.5], [720, 1280, 2.0], [1080, 1920, 3.0]]
-var actual_resolution_index: int = 2
+var actual_resolution_index: int = 3
 
 func _ready() -> void:
 	# WINDOW RESOLUTION

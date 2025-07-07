@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var game_manager := get_parent()
-@onready var words_library_path := "res://assets/words_library.json"
+@onready var words_library_path := "res://assets/languages_words_library.json"
 @onready var category_label := $CategoryLabel
 @onready var languages_label := $LanguagesLabel
 @onready var words_number_label := $WordsNumberLabel

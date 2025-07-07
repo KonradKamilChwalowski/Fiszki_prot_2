@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var game_manager := get_parent()
-@onready var words_library_path := "res://assets/words_library.json"
+@onready var words_library_path := "res://assets/languages_words_library.json"
 @onready var category_label := $CategoryLabel
 @onready var languages_label := $LanguagesLabel
 @onready var words_number_label := $WordsNumberLabel
@@ -57,6 +57,7 @@ func _process(delta: float) -> void:
 				can_switch_language = false
 				count_language_switch += 1
 		else:
+			flashcard_button.scale.x = 1.0
 			is_rotating = false
 			flashcard_button. disabled = false
 	
@@ -137,10 +138,13 @@ func _on_throw_out_button_pressed() -> void:
 	count_hints = 0
 	hint_label.text = "Podpowiedź: "
 	if game_manager.number_of_cards < 1:
-		print("KONIEC SESJI")
-		print(updated_difficulties)
 		save_difficulty_changes()
 		game_manager.change_screen("menu_screen")
+
+
+func _on_exit_button_pressed() -> void:
+		game_manager.change_screen("menu_screen")
+
 
 func save_difficulty_changes():
 	# Otwórz plik JSON

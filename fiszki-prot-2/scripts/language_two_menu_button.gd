@@ -23,4 +23,7 @@ func _on_language_selected(id: int) -> void:
 	game_manager.language_two = lang
 	if game_manager.language_one != game_manager.language_two:
 		language_choice_screen.is_lang_two_choosen = true
+	else:
+		text = "Języki musza być różne!"
+		language_choice_screen.is_lang_two_choosen = false
 	print("Wybrano język: ", lang)

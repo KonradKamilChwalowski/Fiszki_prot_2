@@ -22,6 +22,7 @@ func _process(delta: float) -> void:
 			var t2 = t - 1.
 			logo_texture.scale.x = lerp(0.0, 1.0, t2)
 		else:
+			logo_texture.scale.x = 1.0
 			is_rotating = false
 
 func _on_start_button_pressed() -> void:
