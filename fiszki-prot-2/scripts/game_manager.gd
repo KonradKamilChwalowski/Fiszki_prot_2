@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var background: ColorRect = $ColorRect
-
+@onready var window_size = get_viewport().get_visible_rect().size
 # SCREENS
 var menu_screen := load("res://screens/menu_screen.tscn")
 var language_choice_screen := load("res://screens/language_choice_screen.tscn")
@@ -31,10 +31,14 @@ var color_easy: Color = Color(0.0, 0.6, 0.0, 0.6)
 var color_medium: Color = Color(0.6, 0.6, 0.0, 0.6)
 var color_hard: Color = Color(0.6, 0.0, 0.0, 0.6)
 var color_all: Color = Color(0.4, 0.4, 0.4, 0.6)
-var screen_resolutions: Array = [[360, 640, 1.0], [540, 960, 1.5], [720, 1280, 2.0], [1080, 1920, 3.0]]
-var actual_resolution_index: int = 3
+var screen_resolutions: Array = [[360, 640, 1.0], [540, 960, 1.5], [720, 1280, 2.0], [1080, 1920, 3.0], [360, 640, 1.0]]
+var actual_resolution_index: int = 4
 
 func _ready() -> void:
+	# READ USER'S RESOLUTION
+	screen_resolutions[4][0] = window_size[0]
+	screen_resolutions[4][1] = window_size[1]
+	screen_resolutions[4][2] = window_size[1] / screen_resolutions[0][1]
 	# WINDOW RESOLUTION
 	DisplayServer.window_set_size(Vector2i(screen_resolutions[actual_resolution_index][0], screen_resolutions[actual_resolution_index][1]))
 	background.scale = Vector2(screen_resolutions[actual_resolution_index][2], screen_resolutions[actual_resolution_index][2])
