@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgo0n0phtdbbs"]
+[gd_scene load_steps=4 format=3 uid="uid://bgo0n0phtdbbs"]
 
 [ext_resource type="Script" uid="uid://csrv3mfmo0xcs" path="res://scripts/library_screen.gd" id="1_xhdws"]
+[ext_resource type="Script" uid="uid://703svic6bysb" path="res://scripts/library_category_button.gd" id="2_6vrod"]
 [ext_resource type="PackedScene" uid="uid://tmvhsvwnvkx6" path="res://scenes/button.tscn" id="2_vmqsj"]
 
 [node name="LibraryScreen" type="Node2D"]
@@ -11,9 +12,32 @@ offset_top = 40.0
 offset_right = 360.0
 offset_bottom = 80.0
 theme_override_font_sizes/normal_font_size = 20
-text = "Biblioteka (na razie w budowie)"
+text = "Biblioteka (do przeglądania słówek)"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="LibraryCategoryButton" type="MenuButton" parent="."]
+custom_minimum_size = Vector2(280, 60)
+offset_left = 40.0
+offset_top = 100.0
+offset_right = 320.0
+offset_bottom = 160.0
+text = "Kategorie"
+flat = false
+autowrap_mode = 3
+script = ExtResource("2_6vrod")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(280, 200)
+offset_left = 40.0
+offset_top = 170.0
+offset_right = 320.0
+offset_bottom = 370.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="ReturnButton" parent="." instance=ExtResource("2_vmqsj")]
 offset_left = 105.0

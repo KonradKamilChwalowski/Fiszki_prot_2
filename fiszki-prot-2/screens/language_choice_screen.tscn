@@ -26,6 +26,7 @@ offset_right = 320.0
 offset_bottom = 300.0
 text = "Kategorie"
 flat = false
+autowrap_mode = 3
 script = ExtResource("2_u3nhb")
 
 [node name="LanguageOneMenuButton" type="MenuButton" parent="."]

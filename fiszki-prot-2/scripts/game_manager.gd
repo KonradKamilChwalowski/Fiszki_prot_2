@@ -36,8 +36,8 @@ var actual_resolution_index: int = 4
 
 func _ready() -> void:
 	# READ USER'S RESOLUTION
-	screen_resolutions[4][0] = window_size[0]
-	screen_resolutions[4][1] = window_size[1]
+	screen_resolutions[4][0] = int(window_size[0])
+	screen_resolutions[4][1] = int(window_size[1])
 	screen_resolutions[4][2] = window_size[1] / screen_resolutions[0][1]
 	# WINDOW RESOLUTION
 	DisplayServer.window_set_size(Vector2i(screen_resolutions[actual_resolution_index][0], screen_resolutions[actual_resolution_index][1]))
@@ -54,10 +54,10 @@ func scale_for_resolution(scene: Node2D) -> void:
 	# ALL OTHER RESOLUTION
 	for child in scene.get_children():
 		child.position *= scale_factor
-		if child is MenuButton:
-			child.custom_minimum_size *= scale_factor
-		else:
+		child.custom_minimum_size *= scale_factor
+		if child is not MenuButton:
 			child.size *= scale_factor
+	
 		if child is RichTextLabel:
 			child.add_theme_font_size_override("normal_font_size", scale_factor * 16)
 		for grandchild in child.get_children():
