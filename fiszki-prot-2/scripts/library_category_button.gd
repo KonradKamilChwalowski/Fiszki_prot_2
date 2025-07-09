@@ -70,7 +70,12 @@ func _on_category_selected(id: int) -> void:
 			var entry_id: int = (int(entry["id"]) % 1000) + 1
 			button.text = str(entry_id) + ". " + entry["polish"]
 			#button.connect("pressed", Callable(self, "_on_word_button_pressed").bind(entry))
+			# SCALING
 			var scale_factor = game_manager.screen_resolutions[game_manager.actual_resolution_index][2]
 			button.custom_minimum_size.y = 40 * scale_factor
 			button.add_theme_font_size_override("font_size", scale_factor * 16)
 			box_container.add_child(button)
+	# SCARLING VSCROLL BAR
+	var v_scroll: VScrollBar = $"../ScrollContainer/_v_scroll"
+	v_scroll.size.x *= game_manager.screen_resolutions[game_manager.actual_resolution_index][2]
+	v_scroll.custom_minimum_size.x = v_scroll.size.x
