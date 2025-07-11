@@ -57,11 +57,13 @@ offset_bottom = 520.0
 text = "Opcje"
 
 [node name="ExitButton" parent="." instance=ExtResource("1_ep2em")]
+visible = false
 z_index = 1
 offset_left = 105.0
 offset_top = 520.0
 offset_right = 255.0
 offset_bottom = 580.0
+disabled = true
 
 [node name="RichTextLabel" parent="ExitButton" index="1"]
 text = "Wyjście"
